@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>So Good Btp</title>
+</head>
+
+<body>
+
+    <!-- BAR NAV -->
+
+    <nav class="navigateur">
+
+        <h1>
+            <span>S</span>
+            <span>O</span>
+            <span>G</span>
+            <span>O</span>
+            <span>O</span>
+            <span>D</span>
+            <span>C</span>
+            <span>O</span>
+            <span>N</span>
+            <span>S</span>
+            <span>T</span>
+            <span>R</span>
+            <span>U</span>
+            <span>C</span>
+            <span>T</span>
+            <span>.</span>
+            <span>C</span>
+            <span>O</span>
+            <span>M</span>
+        </h1>
+        <div id="logo-nav" class="anime"><img src="logo.png" alt=""></div>
+        <a class="home" id="logo-a" href="#presentation"><img src="iconnav/hôpital.png" alt="">Acceuil</a>
+        <a id="logo-a" href="#member"><img src="iconnav/gestion-dequipe.png" alt="">Communauté</a>
+        <a id="logo-a" href="#mag"><img src="iconnav/boutique.png" alt="">Boutique</a>
+        <a id="logo-a" href="#contact"><img src="iconnav/telephoner.png" alt="">Contact</a>
+    </nav>
+
+    <!-- BAR NAV CLOSE -->
+
+    <!-- INDUSTRY PRESENTATION -->
+    <div class="presentation">
+        <h1>SO GOOD BTP</h1>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img-presentation/btp 1.png">
+                <div class="text">Site d'achat et de vente de matérieux et appareils de constructions.</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img-presentation/btp 2.png">
+                <div class="text">Site d'achat et de vente de matérieux et appareils de constructions.</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img-presentation/btp 3.png">
+                <div class="text">Site d'achat et de vente de matérieux et appareils de constructions.</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+
+     <!-- MEMBER INDUSTRY -->
+
+     <div class="member-back">
+        <h2>Member Industry</h2>
+        <table class="member-table">
+            <tr>
+                <th id="haut">
+                    <img src="tatum.jpg" alt="">
+                    <h1>Jayson Tatum <br><span id="text">Basketteur adepte du pinceux</span></h1>
+                    <img src="mbappe.webp" alt="">
+                    <h1>Kylian Mbappé <br><span id="text">Footballer adepte des engins</span></h1>
+                </th>
+            </tr>
+            <tr>
+                <th id="bas">
+                    <img src="zidane.webp" alt="">
+                    <h1>Enzo Zidane <br><span id="text">Footballer adepte de la viseuse.</span></h1>
+                    <img src="autres.jpg" alt="">
+                    <h1>Quelqu'un d'autres <br><span id="text">Bientôt virer</span></h1>
+                </th>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="mag">
+        <div class="table">
+            <table>
+                <tr>
+                    <td><img src="img-mag/parpaing.jpg" alt=""></td>
+                    <td>Produit : Parpaing - <span style="font-weight: 500; font-size: 18px;">10€ /10 Unités</span></td>
+                    <td> <button onclick="ajoutPanier('Parpaing', 10)">Acheter</button></td>
+                </tr>
+                <tr>
+                    <td><img src="img-mag/colle.jpg" alt=""></td>
+                    <td>Produit : Colle - <span style="font-weight: 500; font-size: 18px;">9€ </span></td>
+                    <td> <button onclick="ajoutPanier('Colle', 9)">Acheter</button></td>
+                </tr>
+                <tr>
+                    <td><img src="img-mag/carlage.jpg" alt=""></td>
+                    <td>Produit : Carlage - <span style="font-weight: 500; font-size: 18px;">42 € / Par mètre</span>
+                    </td>
+                    <td> <button onclick="ajoutPanier('Carlage', 42)">Acheter</button></td>
+                </tr>
+                <tr>
+                    <td><img src="https://www.cdiscount.com/pdt2/3/6/2/1/700x700/auc1692257704362/rw/pistolet-a-clous-droits-fujiwara-pistolet-a-ongl.jpg"
+                            alt=""></td>
+                    <td>Produit : Pistol à cloud - <span style="font-weight: 500; font-size: 18px;">27,99 €</span></td>
+                    <td> <button onclick="ajoutPanier('Pistolet à clous', 27)">Acheter</button></td>
+                </tr>
+            </table>
+            <div></div>
+            <ul id="articles-panier"></ul>
+            <p>Panier : <span id="coute">0 €</span></p>
+            <button onclick="updatePaye()">Payer</button></td>
+        </div>
+    </div>
+
+    <footer>
+        <div id="information"> <!--debut div information-->
+            <table id="table">
+                <tr>
+                    <th>
+                    <td class="category">Adresse</td>
+                    <td class="category">Contact</td>
+                    <td class="category">Horaires</td>
+                    <td class="category">Formulaire</td>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="P">
+                    <td>14rue de la truelle</td>
+                    <td>05.41.25.84.35</td>
+                    <td>Du dimanche au dimanche</td>
+                    <td style="border-right: none;">
+                        <input type="submit" id="contact" value="Contact" />
+                    </td>
+                    </th>
+                </tr>
+                <th class="P">
+                <td>Springfield - 38511</td>
+                <td>bricolo@outlook.com</td>
+                <td>De 1h/1h01 à 12h/12h05</td>
+                </th>
+                </tr>
+            </table>
+        </div>
+        <div id="footref">
+            <img id="logofoot" src="../sog/logo.png">
+
+            <ul class="textfoot">
+                <ol class="ref">Navigation</ol>
+                <ol a href="#">Acceuil</ol>
+                <ol a href="#">Menu</ol>
+                <ol a href="#">Equipe</ol>
+                <ol a href="#">Magasin</ol>
+                <ol a href="#">Bâteau</ol>
+                <ol a href="#">Catamaran</ol>
+            </ul>
+            <ul class="textfoot">
+                <ol class="ref">Renseignement</ol>
+                <ol a href="#">Rendez-vous</ol>
+                <ol a href="#">Devis en ligne</ol>
+                <ol a href="#">Horaires d'ouverture</ol>
+                <ol a href="#">Durée des travaux</ol>
+                <ol a href="#">Politique de confidentialité</ol>
+            </ul>
+            <div id="label">
+                <img src="../sog/Label.jpg">
+            </div>
+
+        </div> <!--fin div information-->
+
+        <div id="mention">
+            <span>Copyright @ 2018 - 2019 - Tous droit réservés.</span>
+            <a href="#" id="linkmention">Mention légale</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
