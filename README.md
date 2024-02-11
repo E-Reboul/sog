@@ -1,6 +1,6 @@
-Description of project : 
+Description of excercice : 
 
-This project is a first one im working in group. Whe are organized into teams of three, and specifications is : 
+This little project is a first one im working in group. Whe are organized into teams of three, and specifications is : 
 
 - Utilize Jira, Bitbucket and Confluence for planning
   
